@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "email-to-pdf"
+version = "0.1.0"
+description = "An application to convert emails to PDF based on search criteria"
+authors = ["Your Name <your.email@example.com>"]
+packages = [{include = "email_to_pdf", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+weasyprint = ">=60.1"
+beautifulsoup4 = "^4.12.2"
+jinja2 = "^3.1.2"
+psutil = "^5.9.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
